@@ -17,3 +17,28 @@ How to run:
 
 claims=[100,900,250,1200]
 print([c for c in claims if c>=500])
+
+
+# create filtered_claims list if claim <= 900
+filtered_claims = [c for c in claims if c <= 900] 
+
+print(filtered_claims)
+
+# using for loop yield 
+filtered_claims = []
+
+for c in claims:
+    if c <= 900:
+        filtered_claims.append(c)
+print(filtered_claims)
+
+# for with yield example
+def filtered_claims(claims):
+    for c in claims:
+        if c <= 900:
+            yield c
+
+print(filtered_claims(claims))
+
+
+

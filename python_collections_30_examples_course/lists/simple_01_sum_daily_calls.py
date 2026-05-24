@@ -17,3 +17,8 @@ How to run:
 
 calls=[12,18,7,25]
 print(sum(calls))
+
+sum = 0
+for call in calls:
+    sum += call
+print(sum)
