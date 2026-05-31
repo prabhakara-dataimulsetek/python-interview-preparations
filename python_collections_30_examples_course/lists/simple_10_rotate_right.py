@@ -18,3 +18,9 @@ How to run:
 arr=[1,2,3,4,5]
 k=2
 print(arr[-k:]+arr[:-k])
+
+# do it in place
+def rotate_right(arr, k):
+    if k > len(arr):
+        k = k % len(arr)
+
