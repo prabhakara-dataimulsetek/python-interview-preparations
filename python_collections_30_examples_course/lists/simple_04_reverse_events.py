@@ -17,3 +17,9 @@ How to run:
 
 events=['login','search','logout']
 print(events[::-1])
+
+reversedEvents = []
+# reverse with a for loop
+while events:
+    reversedEvents.append(events.pop())
+print(reversedEvents)
